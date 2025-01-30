@@ -3,131 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Online Literature Archive</title>
+    <title>[Forum Name]</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
             margin: 0;
             padding: 0;
+            background-color: #f4f4f4;
         }
         header {
             background-color: #333;
-            color: white;
+            color: #fff;
             text-align: center;
+            padding: 10px 0;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: #fff;
             padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        header h1 {
-            margin: 0;
+        .forum-category {
+            margin-bottom: 20px;
         }
-        nav {
-            background-color: #444;
-            padding: 10px;
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin-right: 15px;
-        }
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-        }
-        .content {
-            padding: 20px;
-        }
-        .work {
-            background-color: white;
-            margin-bottom: 10px;
-            padding: 15px;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        .work h2 {
+        .forum-category h2 {
             margin-top: 0;
         }
-        .category-list {
-            margin: 20px 0;
+        .forum-category ul {
+            list-style-type: none;
+            padding: 0;
         }
-        .category-list a {
-            background-color: #ddd;
-            padding: 8px 12px;
-            border-radius: 5px;
-            margin-right: 10px;
+        .forum-category li {
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+        .forum-category li a {
+            color: #333;
             text-decoration: none;
+        }
+        .forum-category li a:hover {
+            text-decoration: underline;
+        }
+        .post {
+            margin-top: 20px;
+        }
+        .post .post-header {
+            font-weight: bold;
             color: #333;
         }
+        .post .post-content {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
         footer {
-            background-color: #333;
-            color: white;
             text-align: center;
-            padding: 15px 0;
-            margin-top: 30px;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
         }
     </style>
 </head>
 <body>
+    <!-- Header Section -->
+    <header>
+        <h1>[Forum Name]</h1>
+        <p>Welcome to the [Forum Name]! Discuss, share, and connect with like-minded individuals.</p>
+    </header>
 
-<header>
-    <h1>Online Literature Archive</h1>
-    <p>Explore a vast collection of literary works</p>
-</header>
+    <!-- Forum Categories -->
+    <div class="container">
+        <div class="forum-category">
+            <h2>General Discussion</h2>
+            <ul>
+                <li><a href="#">Post 1: Discussing the latest trends</a></li>
+                <li><a href="#">Post 2: Open discussion about news</a></li>
+                <li><a href="#">Post 3: Casual chat</a></li>
+            </ul>
+        </div>
 
-<nav>
-    <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Genres</a></li>
-        <li><a href="#">Authors</a></li>
-        <li><a href="#">Search</a></li>
-    </ul>
-</nav>
+        <div class="forum-category">
+            <h2>Announcements</h2>
+            <ul>
+                <li><a href="#">Post 1: Forum Updates</a></li>
+                <li><a href="#">Post 2: New features added</a></li>
+            </ul>
+        </div>
 
-<div class="content">
-    <h2>Featured Works</h2>
-    
-    <div class="work">
-        <h2>Title of the First Work</h2>
-        <p><strong>Author:</strong> John Doe</p>
-        <p><strong>Genre:</strong> Fiction</p>
-        <p><strong>Description:</strong> A brief summary of the work goes here. This is a placeholder text for a great literary work in your archive.</p>
-        <a href="#" style="color: #007bff;">Read More...</a>
+        <div class="forum-category">
+            <h2>Help & Support</h2>
+            <ul>
+                <li><a href="#">Post 1: Forum navigation tutorial</a></li>
+                <li><a href="#">Post 2: Report a bug</a></li>
+            </ul>
+        </div>
+
+        <div class="forum-category">
+            <h2>Off-Topic</h2>
+            <ul>
+                <li><a href="#">Post 1: Fun and games</a></li>
+                <li><a href="#">Post 2: Hobbies and interests</a></li>
+            </ul>
+        </div>
     </div>
 
-    <div class="work">
-        <h2>Title of the Second Work</h2>
-        <p><strong>Author:</strong> Jane Smith</p>
-        <p><strong>Genre:</strong> Mystery</p>
-        <p><strong>Description:</strong> This is a description for the second work in the archive. Summarize the plot, themes, or notable aspects here.</p>
-        <a href="#" style="color: #007bff;">Read More...</a>
+    <!-- Example Post Section -->
+    <div class="container post">
+        <div class="post-header">UserName - 01/28/2025</div>
+        <div class="post-title"><strong>Title of the Post</strong></div>
+        <div class="post-content">
+            <p>Write your message here...</p>
+        </div>
+
+        <!-- Replies -->
+        <div class="post-replies">
+            <div class="post-header">User1 - 01/28/2025</div>
+            <div class="post-content">
+                <p>Great point! I agree.</p>
+            </div>
+
+            <div class="post-header">User2 - 01/28/2025</div>
+            <div class="post-content">
+                <p>Thanks for sharing your thoughts!</p>
+            </div>
+        </div>
     </div>
 
-    <div class="work">
-        <h2>Title of the Third Work</h2>
-        <p><strong>Author:</strong> Alex Johnson</p>
-        <p><strong>Genre:</strong> Fantasy</p>
-        <p><strong>Description:</strong> A brief description of the third work, explaining the key elements and themes of the literary piece.</p>
-        <a href="#" style="color: #007bff;">Read More...</a>
-    </div>
-
-    <div class="category-list">
-        <h3>Browse by Category:</h3>
-        <a href="#">Fiction</a>
-        <a href="#">Fantasy</a>
-        <a href="#">Science Fiction</a>
-        <a href="#">Mystery</a>
-        <a href="#">Poetry</a>
-        <a href="#">Non-Fiction</a>
-    </div>
-</div>
-
-<footer>
-    <p>&copy; 2025 Online Literature Archive | All Rights Reserved</p>
-</footer>
-
+    <!-- Footer Section -->
+    <footer>
+        <p>Terms of Service | Privacy Policy | Contact Us</p>
+    </footer>
 </body>
 </html>
